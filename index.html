@@ -1,1 +1,128 @@
-hello2
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин компьютерной техники</title>
+    <link rel="stylesheet" href="stryle.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul id="menu">
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Каталог</button>
+                        <div class="dropdown-content">
+                            <a href="#monitor">Мониторы</a>
+                            <a href="#perscomp">Персональные компьютеры</a>
+                            <a href="#perefer">Переферия</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact-form">Оставить заявку</a></li>
+                <li><a href="#about-us">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalog">
+        <h2>Каталог товаров</h2>
+        <div class="category">
+            <h3>Мониторы</h3>
+            <div class="product-list">
+                <div class="product" id="monitor">
+                    <img src="monitor1.jpg" alt="Monitor 1">
+                    <p>Monitor 1</p>
+                </div>
+                <div class="product" id="monitor">
+                    <img src="monitor2.jpg" alt="Monitor 2">
+                    <p>Monitor 2</p>
+                </div>
+                <div class="product" id="monitor">
+                    <img src="monitor3.jpg" alt="Monitor 3">
+                    <p>Monitor 3</p>
+                </div>
+                <div class="product" id="monitor">
+                    <img src="monitor4.jpg" alt="Monitor 4">
+                    <p>Monitor 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h3>Персональные компьютеры</h3>
+            <div class="product-list">
+                <div class="product" id="perscomp">
+                    <img src="pc1.jpg" alt="PC 1">
+                    <p>PC 1</p>
+                </div>
+                <div class="product" id="perscomp">
+                    <img src="pc2.jpg" alt="PC 2">
+                    <p>PC 2</p>
+                </div>
+                <div class="product" id="perscomp">
+                    <img src="pc3.jpg" alt="PC 3">
+                    <p>PC 3</p>
+                </div>
+                <div class="product" id="perscomp">
+                    <img src="pc4.jpg" alt="PC 4">
+                    <p>PC 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h3>Переферия</h3>
+            <div class="product-list">
+                <div class="product" id="perefer">
+                    <img src="mouse.jpg" alt="Mouse">
+                    <p>Mouse</p>
+                </div>
+                <div class="product" id="perefer">
+                    <img src="keyboard.jpg" alt="Keyboard">
+                    <p>Keyboard</p>
+                </div>
+                <div class="product" id="perefer">
+                    <img src="headset.jpg" alt="Headset">
+                    <p>Headset</p>
+                </div>
+                <div class="product" id="perefer">
+                    <img src="printer.jpg" alt="Printer">
+                    <p>Printer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <h2>Оставить заявку</h2>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <section id="about-us">
+        <h2>О нас</h2>
+        <p>Наш магазин предоставляет широкий ассортимент компьютерной техники. Мы гарантируем качество и отличный
+            сервис.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Магазин компьютерной техники</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
