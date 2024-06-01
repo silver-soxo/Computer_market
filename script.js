@@ -1,7 +1,11 @@
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 100; // Получаем высоту верхнего меню
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset; // Вычисляем позицию якоря с учетом высоты меню
+        window.scrollTo({
+            top: targetPosition,
             behavior: 'smooth'
         });
     });
